@@ -1,0 +1,21 @@
+[mysqld]
+bind-address = 0.0.0.0
+
+innodb_buffer_pool_size = 1024M
+
+# Unicode
+character-set-server = utf8mb4
+collation-server = utf8mb4_unicode_ci
+
+sql_mode='TRADITIONAL'
+max_allowed_packet = 256M
+skip-log-bin
+
+default-time-zone = 'Europe/Prague'
+
+[client]
+ssl-mode = DISABLED
+loose-default-character-set=utf8mb4
+
+[mysql]
+loose-default-character-set=utf8mb4
