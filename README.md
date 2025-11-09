@@ -13,6 +13,13 @@ Jde o finální řešení pro dožití projektů ClIQUO. Koncipované je tak, ab
 
 Adminer je k dispozici na adrese [s4.cliquo.cz](https://s4.cliquo.cz/), heslo je centrální pro root
 
+## Crontab
+
+Ujisti se, že je v crontabu tento řádek:
+```text
+5	0,6	*	*	*	cd /root/docker/cliquo-server && make certbot-renew 
+```
+
 ## Docker
 
 Vše je propojeno pomocí docker network `cliquo_net` v režimu bridge. Jednotlivé kontejnery se tedy vzájemně vidí pod svými jmény.
