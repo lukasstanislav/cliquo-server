@@ -67,7 +67,7 @@ docker run -d \
   --network cliquo_net \
   --restart unless-stopped \
   -v "$(pwd)/:/app" \
-  grindl
+  licard
 ```
 
 ## 3. Proxy
@@ -103,10 +103,3 @@ V případě potřeby proveď update CLIQUO Engine:
 ```bash
 wget -q -O cq_upd.sh https://repo.cliquo.cz/cdn/source/update.sh && chmod +x cq_upd.sh && ./cq_upd.sh
 ```
-
-# Shared MySQL Database
-
-* Host: `cliquo_mysql`
-* Port: `3306`
-* User: `root`
-* Password: `gdkZS6S6_Sf2ss9ss6556`
